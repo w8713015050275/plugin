@@ -1,0 +1,2 @@
+include ':app', ':zhcplugin'
+rootProject.name='plugin'
