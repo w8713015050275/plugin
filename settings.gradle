@@ -1,2 +1,2 @@
-include ':app', ':zhcplugin'
+include ':app', ':zhcplugin', ':hahaha'
 rootProject.name='plugin'
