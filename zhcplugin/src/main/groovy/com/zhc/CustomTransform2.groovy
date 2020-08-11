@@ -2,24 +2,26 @@ package com.zhc
 
 import com.android.build.api.transform.*
 import com.google.common.collect.Sets
-import com.google.gson.Gson
 import groovy.json.JsonOutput
-import org.gradle.api.Project
 import org.apache.commons.io.FileUtils
-import org.objectweb.asm.*
+import org.gradle.api.Project
+import org.objectweb.asm.AnnotationVisitor
+import org.objectweb.asm.ClassReader
+import org.objectweb.asm.ClassVisitor
+import org.objectweb.asm.Opcodes
 
 
-class CustomTransform extends Transform {
+class CustomTransform2 extends Transform {
     Project mProject
 
-    CustomTransform(Project project) {
+    CustomTransform2(Project project) {
         mProject = project
     }
 
     @Override
     String getName() {
         println("zhc getName")
-        return "zhcTransform"
+        return "zhctransform2"
     }
 
     @Override

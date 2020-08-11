@@ -1,2 +1,4 @@
+include ':libAnotation'
+include ':aptProcessor'
 include ':app', ':zhcplugin', ':hahaha'
 rootProject.name='plugin'
